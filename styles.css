@@ -17,6 +17,7 @@ body {
     justify-content: center;
 }
 .card {
+    margin-top: 2.2em;
     width: 800px;
     height: 420px;
     background: white;
@@ -105,7 +106,7 @@ h5 {
     height: 60px;
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 500px){
     body {
         height: 1080px;
     }
