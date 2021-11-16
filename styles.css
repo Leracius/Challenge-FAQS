@@ -1,0 +1,159 @@
+body {
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    height: 800px; 
+
+}
+:root {
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    width: 800px;
+    height: 420px;
+    background: white;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;    
+}
+
+/* Images */
+.image-section {
+    width: 50%;
+    height: 100%;
+}
+.pattern, .box, .woman {
+    position: relative;
+}
+.pattern {    
+    z-index: 1;
+    right: 400px;
+    top: -220px;
+}
+
+.woman {
+    z-index: 5;
+    top: -730px;
+    left: -90px;
+}
+.box {   
+    z-index: 10;
+    top: 160px;
+    left: -55px;
+    height: 3em;
+    width: 40px;
+}
+.mobile-pattern, .mobile-woman {
+    display: none;
+}
+
+/* Botones */
+.card-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.button-section {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 90%;
+    background: white;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+h1 {
+    margin-bottom: 1.3em;
+    color: var(--Very-dark-desaturated-blue);
+}
+h5 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+}
+.grow-card {
+    padding: 8px;
+    width: 100%;
+    height: 25px;
+    border-bottom: 1px solid var(--Light-grayish-blue);
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0;
+}
+.h5-img {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: var(--Very-dark-grayish-blue);
+    font-weight: 700;
+}
+.h5-hidden {
+    color: grey;
+    padding-left: 7px;
+}
+.grow-card:hover {
+    height: 60px;
+}
+
+@media only screen and (max-width: 480px){
+    body {
+        height: 1080px;
+    }
+    .card {
+        flex-direction: column;
+        width: 90%;
+        height: 480px;
+        margin-top: 10em;
+        overflow: visible;
+    }
+    .image-section {
+        width: 100%;
+        height: 140px;
+    }
+    .box, .pattern, .woman{
+        display: none;
+    }
+    .mobile-pattern, .mobile-woman {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+    .mobile-woman {
+        z-index: 5;
+        bottom: 135px;
+        right: 20px;
+    }
+    .mobile-pattern {
+        z-index: 1;
+        bottom: 250px;
+        
+    }
+    .card-section-container {
+        width: 100%;
+    }
+    .button-section {
+        width: 80%;
+    }
+    .titulo {
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        margin: 0;
+    }
+    .grow-card:hover {
+        height: 70px;
+    }
+    
+}
+    
